@@ -12,6 +12,8 @@ libraryDependencies ++= Seq(
   ws,
   specs2 % Test )
 
+libraryDependencies += "org.postgresql" % "postgresql" % "9.4.1212"
+
 unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )  
 
 resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"  
